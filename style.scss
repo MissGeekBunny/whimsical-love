@@ -1,0 +1,32 @@
+/*!
+Theme Name: Whimsical Love
+Author: Missy Bunnie
+Author URI: http://www.missybunnie.com
+Description: A vintage colored cute romantic theme.
+Version: 1.1.2
+License: GNU General Public License
+License URI: license.txt
+Tags: responsive-layout, right-sidebar, two-columns, red, pink, blue
+
+This theme is based on Sassy Starter (https://github.com/MissyBunnie/Sassy-Starter) which is base on is based on Underscores (http://underscores.me/)
+
+This theme's code and images are all covered by a GPL license.
+*/
+
+// Basic Set Up
+@import "sass/_reset.scss";
+@import "sass/_imports.scss";
+@import "sass/_grid.scss";
+@import "sass/_variables.scss";
+
+// Styling Includes
+@import "sass/base/_globals.scss";
+@import "sass/base/_menu.scss";
+@import "sass/base/_content.scss";
+@import "sass/base/_asides.scss";
+@import "sass/base/_media.scss";
+@import "sass/base/_navigation.scss";
+@import "sass/base/_comments.scss";
+@import "sass/base/_widgets.scss";
+@import "sass/base/_infinite-scroll.scss";
+

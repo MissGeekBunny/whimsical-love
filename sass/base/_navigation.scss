@@ -1,0 +1,29 @@
+/* =Navigation
+----------------------------------------------- */
+.main-navigation {
+	margin-left: 100px;
+	margin-right: 0px;
+	ul{
+		li {
+				padding-left: $padding;
+				word-wrap: break-word;
+			}
+		ul{
+			background-color: $background-color;
+			padding: $padding * 3;
+			border-radius: $border-radius;
+		}
+	}
+}
+.site-main [class*="navigation"] {
+	margin: 0 0 $margin-bottom;
+	overflow: hidden;
+}
+[class*="navigation"] .nav-previous {
+	@extend %span_5;
+}
+[class*="navigation"] .nav-next {
+	@extend %span_5;
+	float: right;
+	text-align: right;
+}

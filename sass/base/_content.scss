@@ -1,0 +1,39 @@
+/* =Content
+----------------------------------------------- */
+#primary {
+	@extend %span_8;
+	@extend %col;
+	@extend %row;
+	padding: $padding;
+	margin-left: 0;
+	@media screen and (max-width: 800px) {
+		width: 100%;
+	}
+	background-color: $background-color
+}
+.sticky {
+background: #FCF76F;
+padding: $padding;
+}
+.hentry {
+	margin: 0 0 $margin-bottom;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $margin-bottom 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 $margin-bottom;
+}
+
+
