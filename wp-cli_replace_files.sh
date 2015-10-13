@@ -1,0 +1,1 @@
+wpcli 'core download --force' 
