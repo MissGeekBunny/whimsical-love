@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+#masthead {
+	@extend %span_10;
+	background-color: $background-color;
+	margin: 2.5% auto;
+	border-radius: $border-radius;
+	padding: 2.5%;
+	@extend %row;
+}
+.site-branding {
+	@extend %span_9;
+	vertical-align: center;
+}
+#masthead #logo {
+	width: 100px;
+	height: 100px;
+	margin-right: 2.5%;
+	@extend %col;
+	background: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+#content {
+	@extend %span_10;
+	margin-left: auto;
+	margin-right: auto;
+}
+#primary {
+	@extend %col;
+	@extend %span_7;
+	margin-right: 2.5%;
+}
+#secondary {
+	@extend %col;
+	@extend %span_4;
+	background-color: $background-color;
+	border-radius: $border-radius;
+	padding: 2.5%;
+}
+article, #comments {
+	background-color: $background-color;
+	border-radius: $border-radius;
+	padding: 2.5%;
+	overflow: hidden;
+}
+.nav-links {
+	@extend %row;
+}
+.nav-previous, .nav-next {
+	background-color: $background-color;
+	border-radius: $border-radius;
+	padding: 2.5%;
+	margin-bottom: 3%;
+}
+.site-info {
+	@extend %span_10;
+	margin: 2.5% auto;
+	background-color: $background-color;
+	padding: 2.5%;
+	border-radius: $border-radius;
+	text-align: center;
+	@include font-size(16);
+
+}
+
+//Tables
+td, th{
+	padding: 2.5%;
+	border: $border;
+}
+th {
+	font-weight: bold;
+}
+table {
+	overflow: scroll;
+}

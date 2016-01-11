@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Whimsical Love
+ * The template for displaying search forms in Sassy Starter
  *
  * @package Whimsical Love
  */

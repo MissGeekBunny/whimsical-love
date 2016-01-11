@@ -1,20 +1,5 @@
 /* =Widgets
 ----------------------------------------------- */
-#secondary {
-	@extend %col;
-	@extend %span_4;
-	float: right;
-	padding: $padding;
-	@media screen and (max-width: 800px) {
-		width: 100%;
-		margin-left: 0; 
-		margin-top: $margin;
-	}
-	background-color: $background-color;
-	ul {
-		list-style-type: none;
-	}
-}
 .widget {
 	margin: 0 0 $margin-bottom;
 }

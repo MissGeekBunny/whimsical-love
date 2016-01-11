@@ -12,10 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'whimsical_love_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'whimsical-love' ), 'WordPress' ); ?></a>
+			<?php printf( esc_html__( 'Powered by %1$s', 'whimsical-love' ), '<a href="http://wordpress.org/">WordPress</a>' ); ?>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'whimsical-love' ), 'Whimsical Love', '<a href="http://www.missybunnie.com" rel="designer">Missy Bunnie</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'whimsical-love' ), 'Whimsical Love', '<a href="http://malevolentbunny.com/whimsical-love/" rel="designer">Malevolent Bunny</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

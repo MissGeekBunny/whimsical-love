@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Source+Sans+Pro:400,400italic,700);
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $font-color;
+	font-family: $font-family;
+	line-height: 1.5;
+	font-size: 100%;
+}
+
+p, span, li, td, th, dd, dt, .wp-caption-text, address {
+	@include font-size(16);
+}
+
+%header {
+	font-family: $title-font;
+	color: $title-color;
+}
+
+h1 {
+	@extend %header;
+	@include font-size(32);
+	a {
+	color: $title-color;
+	text-decoration: none;
+	}
+}
+
+#masthead .site-branding {
+	@extend %col;
+.site-title {
+	@extend h1;
+	a {
+		color: $title-color;
+		@include font-size(32);
+	}
+}
+}
+
+
+h2 {
+	@extend %header;
+	@include font-size(28);
+	a {
+		@include font-size(28);
+	}
+}
+#content h2 {
+	@extend %header;
+	@include font-size(28);
+	a {
+		text-decoration: none;
+		color: $title-color;
+	}
+}
+.site-description {
+	@extend h2;
+}
+.entry-title {
+	color: $title-color;
+}
+h3 {
+	@extend %header;
+	@include font-size(24);
+}
+h4 {
+	@extend %header;
+	@include font-size(22)
+}
+h5 {
+	@extend %header;
+	@include font-size(20);
+}
+h6 {
+	@extend %header;
+	@include font-size(19);
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+code,
+kbd,
+tt,
+var,
+pre {
+	font-family: $code-family;
+	@include font-size($code-size);
+	max-width: 100%;
+	overflow: auto;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+strong {
+	font-weight: bold;
+}
+sup {
+	font-size: 75%;
+	vertical-align: super;
+}
+sub {
+	font-size: 75%;
+	vertical-align: sub;
+}

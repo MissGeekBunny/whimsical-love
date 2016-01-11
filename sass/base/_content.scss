@@ -1,39 +1,48 @@
-/* =Content
------------------------------------------------ */
-#primary {
-	@extend %span_8;
-	@extend %col;
-	@extend %row;
-	padding: $padding;
-	margin-left: 0;
-	@media screen and (max-width: 800px) {
-		width: 100%;
-	}
-	background-color: $background-color
-}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
 .sticky {
-background: #FCF76F;
-padding: $padding;
+	display: block;
+	background-color: #FCF76F;
+	border-radius: 0px;
 }
+
 .hentry {
 	margin: 0 0 $margin-bottom;
 }
+
 .byline,
-.updated {
+.updated:not(.published) {
 	display: none;
 }
+
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
+
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: $margin-bottom 0 0;
 }
+
 .page-links {
 	clear: both;
 	margin: 0 0 $margin-bottom;
 }
 
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
 
+.entry-footer span {
+	margin-right: 2.5%;
+}

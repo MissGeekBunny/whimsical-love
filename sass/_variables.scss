@@ -1,24 +1,23 @@
 //Font Settings
-$font-family: 'Architects-Daughter';
-$font-size: 16px;
-$font-rem: 1.6rem;
+$title-font: 'Architects Daughter', cursive;
+$font-family: 'Source Sans Pro', sans-serif;
+//font size is controlled in the mixins section
+
 $code-family:"Courier 10 Pitch", Courier, monospace;
-$code-size: 15px;
-$code-rem: 1.5rem;
-$button-size: 12px;
+$code-size: 16;
+$button-size: 12;
 
 //Margin, Padding and other Layout Properties
 $margin-bottom: 1.5em;
-$border: 1px solid #ccc;
-$border-radius: 3px;
-$padding: 2.5%;
-$margin: 2.5%;
+$border: 1px solid #74716F;
+$border-radius: 10px;
 
 //Color
 $font-color: #74716F;
+$code-color: #eee;
 $title-color: #FF2632;
 $background-color: #F4ECE9;
-$link-color: darken(#93D9DC, 10%);
+$link-color: #6ccbd0;
 $link-visited-color: $link-color;
-$link-hover-color: #FB5667;
-$button-color: #FB5667;
+$link-hover-color: $title-color;
+$button-color: $link-color;
