@@ -1,0 +1,1 @@
+This theme is a free theme available from Malevolent Bunny. Malevolent Bunny is a theme shop for Miss Geek Bunny. For more information go to [missgeekbunny.com](https://missgeekbunny.com)
